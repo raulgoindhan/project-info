@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Food Refined TT</title>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+ <!--<div class = "header"> </h1>Food RefinedTT</h1> </div>-->
+</head>
+
+<body>
+   <link href="//fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!--
+  <div class = "header">
+    </h1>Food RefinedTT</h1>
+  </div> -->
+
+  <!--<A HREF="pages/about.html">About this site</A> -->
+  <nav class="topnav"> 
+
+    <h1>Food Refined TT</h1>
+    <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/contact">Contact Us </a></li>
+    <li><a href="/shelters">Shelters</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/login">Login/Sign Up</a></li>
+<div class = "search">
+   <input type="text" 
+ name = "search" id = "search" placeholder="Search here">
+</div>
+    </ul>
+</nav>
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages%}
+    {% for category, message in messages %}
+        {% if category == 'error' %}
+        <div class="alert" role="alert" >
+            <h4>{{message}}</h4>
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endif %}
+        {% if category == 'success' %}
+        <div class="alert-success" role="alert" >
+            <h4>{{message}}</h4>
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% endwith %}
+{% block temp %} Test {% endblock %}
+
+<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  
+</body>
+
+</html>

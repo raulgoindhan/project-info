@@ -1,0 +1,97 @@
+
+{% extends "base.html" %}
+
+  {% block temp %}
+  <!-- Code for the login page -->
+  
+  <section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src="FRTT.png"
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">We are Food Refined TT</h4>
+                </div>
+
+                <form method="POST">
+                  <p>Please register your account</p>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="name_input">Name</label>
+                    <input type="text" id="name_input" class="form-control"
+                      placeholder="Name" name="name"/>
+                    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="email_input">Email</label>
+                    <input type="email" id="email_input" class="form-control"
+                      placeholder="Email" name="email"/>
+                    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="phone_number">Phone Number</label>
+                    <input type="tel" id="phone_number" class="form-control"
+                      placeholder="Phone Number" name="phone"/>
+                    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="address">Address</label>
+                    <input type="email" id="address" class="form-control"
+                      placeholder="Address" name="email"/>
+                    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example22">Password</label>
+                    <input type="password" id="form2Example22" class="form-control" name="password"/>
+                   
+                  </div>
+
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example222">Confirm Password</label>
+                    <input type="password" id="form2Example222" class="form-control" name="password2"/>
+                  
+                  </div>
+
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Register</button>
+                  
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">have an account?</p>
+                    <a href="/login">
+                    <button type="button" class="btn btn-outline-danger">Login</button>
+                  </a>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">We are focused on reducing food wastage</h4>
+                <p class="small mb-0"> It was discovered that for such a small                   country, Trinidad and Tobago (as well as Caribbean countries                   and Latin America combined), we waste about 50 million tons                    of food annually. 
+                  This results in, not only an environmental problem but an                      economical one too. With FoodRefinedTT, we look to lower the                   amount of food disposed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  {% endblock %}

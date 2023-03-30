@@ -1,0 +1,215 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*NAV BAR CSS */
+.topnav{
+  writing-mode: horizontal-tb;
+  padding-block: 10px 7px;
+  background-color:#63bfa1; /*#63bfa1*/
+  border-radius: 30px;
+
+  /*comment first*/
+  font-family: Bangers; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+}
+
+/*heading above nav bar */
+
+h1{
+  background-color:#26ab91;
+  writing-mode: horizontal-tb;
+  padding-inline: 20px 30px;
+  text-align: center;
+  font-family: Bangers; 
+  font-size:20px; 
+}
+
+/*navbar formatting */
+.topnav ul {
+      
+      /*list-style-type: none;
+      overflow: hidden;
+      padding-block: 20px 3px;
+      background-color: #63bfa1; 
+      text-align: center;
+      font-size: 2px;*/
+
+      overflow: auto;
+      
+    }
+
+.alert h4{
+  background-color: white;
+  padding: 10px;
+  color: red;
+}
+.alert-success h4{
+  background-color: white;
+  padding: 10px;
+  color: greenyellow;
+}
+    
+.topnav li {
+      float: left;
+      list-style: none;
+      margin: 13px 20px;
+    }
+
+.topnav li a {
+      /*display: block;*/
+      color: #100f0f;
+      text-align: left;
+      text-decoration: none;
+      padding: 1px 10px;
+    }
+
+.topnav li a:hover {
+            color: #097d07;
+          }
+
+.search {
+  float: right;
+  color: white;
+  padding: 12 px 75 px;
+}
+
+.topnav input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+
+/*nav bar code end*/    
+
+
+.greeting{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* DONATE BUTTON */
+.donate-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  background: #08530D;
+  font-family: Bangers;
+  font-size: 2em;
+  color: white;
+  cursor: pointer; 
+}
+
+/*Pictures for main page*/
+.picture-parent{
+
+  display: grid;
+  grid-template-columns;
+  column-gap: 2px;  
+}
+
+.pic1{
+    /*picture sizing*/
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+/*
+.backimg{
+  opacity: 0.5;
+}
+*/
+
+/*BACKGROUND*/
+/*
+body{
+  background: url("background.jpg");
+  background-blend-mode: exclusion;
+} */
+body{
+  background-image: url("background.jpg");
+  height: 100vh;
+}
+
+
+/*Contact Page CSS */
+.contact-page{
+  text-align:center
+}
+
+
+/*FAQ page */
+.FAQ-page{
+  margin-top: 1.3vw;
+  text-align: left;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,91,1) 84%);
+}
+.q1{
+  text-align: left;
+  
+}
+.q2{
+  text-align: left;
+}
+.q3{
+  text-align: left;
+   
+}
+.q4{
+  text-align: left;
+}
+
+
+
+/*shelter page*/
+.sh1{
+  font-size: 25px;
+  text-align: left;
+}
+
+.sh2{
+  font-size: 25px;
+  text-align: left;
+}
+
+.sh3{
+  font-size: 25px;
+  text-align: left;
+}
+.myRange{
+  position: center;
+}
+
+
+/*Login style code*/
+
+.gradient-custom-2 {
+/* fallback for old browsers */
+background: #f3eee7;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #b6f2c5, #3eaa3c, #95b946, #3a5f1c);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
