@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 {% block temp %}
   <div class="sh1">
-    <br></br>
-    <p>San Fernando Centre for Displaced Persons (SFCDPF)</p>
+    <img src="{{ url_for('static', filename='heart.svg') }}" class="heart-icon">
+    <h3>San Fernando Centre for Displaced Persons (SFCDPF)</h3>
+    <div class="slider-div">
     <input type="range" min="1" max="100" value="50" class="slider">
+      <h4>5</h4>
+  </div>
+  <div class="donate-button-class">
+    <a href="">
+    <button  class="donate-button-entry"> Donate Now </button>
+  </a>
+  </div>
   </div>
 
   <div class="sh2">

@@ -23,6 +23,7 @@ def register():
         address = data.get('address')
         password = data.get('password')
         password2 = data.get('password2')
+        isRest = data.get("resturant")
 
         
 
@@ -38,6 +39,8 @@ def register():
             flash('enter a proper telephone number', category="error")
         else:
             flash('account created', category='success')
+
+        print(isRest)
 
     return render_template('register.html')
 

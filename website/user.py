@@ -9,6 +9,7 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(120), nullable=False)
     phone_number = db.Column(db.Integer, nullable=False)
     address = db.Column(db.String, nullable=False)
+    isResturant = db.Column(db.Boolean, nullable=False)
 
     def __init__(self, username, password):
         self.username = username

@@ -11,26 +11,29 @@
  
 <div class="greeting">
    <br></br>
-   <p> Help us reach our goal of 10,000 meals donated to shelters and people in need/ Help end hunger in T&T today!</p>
+   <p class="heading"> Help us reach our goal of 10,000 meals donated to shelters and people in need/ Help end hunger in T&T today!</p>
 </div>  
   
   <!--<div class = "button">
   <button type="button">Donate Now</button>
   </div> -->
-
-  <button a href= "donate.html"> Donate Now </button>
+  <div class="donate-button-class">
+  <a href="">
+  <button  class="donate-button-entry"> Donate Now </button>
+</a>
+</div>
   <!--<script src="script.js"></script> -->
   <br>
   
   <div class = "picture-parent">
       <div>
-        <img src="{{ url_for('static', filename='food1.jpeg') }}" width="250" height="250">
+        <img src="{{ url_for('static', filename='food1.jpeg') }}" width="250" height="250" class="picture-child">
       </div>
       <div>
-        <img src="{{ url_for('static', filename='food2.jpeg') }}" width = "250" height = "250">
+        <img src="{{ url_for('static', filename='food2.jpeg') }}" width = "250" height = "250" class="picture-child"> 
       </div>
       <div>
-        <img src="{{ url_for('static', filename='food3.jpeg') }}" width = "250" height = "250">
+        <img src="{{ url_for('static', filename='food3.jpeg') }}" width = "250" height = "250" class="picture-child">
       </div>
   </div>
   {% endblock %}
