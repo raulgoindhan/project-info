@@ -23,7 +23,7 @@ def register():
         address = data.get('address')
         password = data.get('password')
         password2 = data.get('password2')
-        isRest = data.get("resturant")
+        isRest = data.get("yes_no_radio")
 
         
 
@@ -33,10 +33,10 @@ def register():
             flash('passwords entered are not the same', category='error')
         elif len(password) < 5:
             flash('password should be greater than 5 characters', category='error')
-        elif len(phone_number > 11):
-            flash('enter a proper telephone number', category="error")
-        elif len(phone_number < 7):
-            flash('enter a proper telephone number', category="error")
+        # elif len(phone_number > 11):
+        #     flash('enter a proper telephone number', category="error")
+        # elif len(phone_number < 7):
+        #     flash('enter a proper telephone number', category="error")
         else:
             flash('account created', category='success')
 

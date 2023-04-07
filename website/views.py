@@ -13,3 +13,7 @@ def faq():
 @views.route('/shelters')
 def shelters():
     return render_template('shelters.html')
+
+@views.route('/donations')
+def donations():
+    return render_template('donations.html')

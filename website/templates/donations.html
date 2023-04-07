@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block temp %}
+
+<section class="h-100 gradient-form donation-section">
+    <div class="center">
+    <h2 >Donations</h2>
+    <h4>Thank you for donating!</h4>
+    <h6>Items to be donated</h6>
+    <div class="selection">
+    <form action="">
+        <label for="options">Options</label>
+
+        <select name="options" id="options">
+          <option value="test">Test</option>
+        </select> 
+
+        <label for="pickup">PickUp/Delivery</label>
+
+        <select name="pickup" id="pickup">
+          <option value="pickup">Pick-Up</option>
+          <option value="delivery">Delivery</option>
+        </select>
+
+        <div >
+            <button type="submit" class="donate-button" type="button" style="border-radius: 20px; width: 150px; margin-top: 15px;">Donate</button>
+            
+          </div>
+    </form>
+    </div>
+    </div>
+  </section>
+
+{% endblock %}
