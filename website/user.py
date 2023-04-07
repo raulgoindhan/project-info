@@ -9,10 +9,14 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(120), nullable=False)
     phone_number = db.Column(db.Integer, nullable=False)
     address = db.Column(db.String, nullable=False)
-    isResturant = db.Column(db.Boolean, nullable=False)
+    is_resturant = db.Column(db.Boolean, nullable=False)
 
-    def __init__(self, username, password):
-        self.username = username
+    def __init__(self, name, email, password, phone_number, address, is_resturant):
+        self.name = name
+        self.email = email
+        self.phone_number = phone_number
+        self.address = address
+        self.is_resturant = is_resturant
         self.set_password(password)
 
     def toJSON(self):

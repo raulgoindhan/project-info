@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from . import db
 
 views = Blueprint('views', __name__)
 
@@ -17,3 +18,8 @@ def shelters():
 @views.route('/donations')
 def donations():
     return render_template('donations.html')
+
+@views.route('/drop')
+def drop():
+    db.drop_all()
+    return 'Dropped All'
