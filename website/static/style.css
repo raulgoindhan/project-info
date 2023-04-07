@@ -100,7 +100,7 @@ h1{
   border-radius: 5px;
   border: 1px solid #000;
   padding: 10px 20px;
-  background: #08530D;
+  background: #1E6A2E;
   font-family: Bangers;
   font-size: 2em;
   color: white;
@@ -134,7 +134,7 @@ h1{
   }
 .sh .donate-button-entry{
   position: absolute;
-  background-color: #08530D; /* Green */
+  background-color: #1E6A2E; /* Green */
   border: none;
   color: white;
   padding: 15px 45px;
@@ -150,7 +150,7 @@ h1{
 }
 .donate-button-entry{
   position: absolute;
-  background-color: #08530D; /* Green */
+  background-color: #1E6A2E; /* Green */
   border: none;
   color: white;
   padding: 15px 45px;
@@ -298,7 +298,7 @@ body{
 }
 
 .donation-section h4{
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 40px;
 }
 
