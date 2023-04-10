@@ -1,6 +1,7 @@
 from werkzeug.security import check_password_hash, generate_password_hash
 from . import db
 
+
 class Shelter(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username =  db.Column(db.String, nullable=False)
@@ -9,7 +10,7 @@ class Shelter(db.Model):
     shelter_address = db.Column(db.String, nullable = False)
     shelter_contact = db.Column(db.Integer, nullable = False)
   
-    def __init__(self, username, password):
+    def __init__(self, username, password, shelter_name, shelter_address, shelter_contact):
         self.username = username
         self.set_password(password)
         self.shelter_name = shelter_name
